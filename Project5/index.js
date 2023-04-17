@@ -9,6 +9,7 @@
   device.textContent = JSON.stringify(jsonData);
   console.log('Got onResponse', JSON.stringify(jsonData));
   }
+   // API for post requests
  async function postData(url = "https://jsonplaceholder.typicode.com/posts",data={}) {
     const response = await fetch(url,{
   method: 'POST',
